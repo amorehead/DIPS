@@ -52,8 +52,8 @@ python3 src/tfrecord.py ./data/DIPS/interim/pairs-pruned ./data/DIPS/processed/t
 The DB5 dataset is provided as a fully processed set [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/H93ZKK).  If, however, you wish to regenerate it, you can apply the above steps, with some additional flags and no pruning (as DB5 is already a gold-standard set):
 
 ```
-python src/make_dataset.py ./data/DB5/raw/ ./data/DB5/interim --type=db5 --unbound
-python src/tfrecord.py ./data/DB5/interim/pairs ./data/DB5/processed/tfrecords -c 8
+python3 src/make_dataset.py ./data/DB5/raw/ ./data/DB5/interim --type=db5 --unbound
+python3 src/tfrecord.py ./data/DB5/interim/pairs ./data/DB5/processed/tfrecords -c 8
 ```
 
 ## Using tfrecord files with a TF dataset
