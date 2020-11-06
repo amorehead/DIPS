@@ -8,7 +8,7 @@ setup(
     author='Patricia Suriana',
     license='MIT',
     install_requires=[
-        'atom3',
+        'atom3-py3',
         'easy-parallel',
         'numpy',
         'pandas',
